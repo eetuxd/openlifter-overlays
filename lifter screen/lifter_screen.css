@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Bombardier";
+  src:
+    local("Bombardier"),
+    url("../Bombardier.otf") format("opentype");
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Bombardier", sans-serif;
+  padding-top: 25px;
+}
+
+img {
+  height: 90px;
+  empty-cells: show;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "lifterAttempt liftTimer"
+    "lifterName liftTimer"
+    "lifterInfo barLoad"
+    "attemptWeight barLoad";
+  grid-template-columns: auto auto;
+  gap: 5px;
+  padding: 5px;
+  grid-auto-flow: column;
+  width: 100%;
+  margin: 20px;
+}
+
+.timerContainer {
+  grid-area: liftTimer;
+  font-size: 200px;
+  margin-left: auto; 
+  margin-right: 10;
+  white-space: nowrap;
+  width: 700px;
+}
+
+.liftTimer {
+  margin: auto;
+}
+
+.lifterAttempt {
+  font-size: 100px;
+  grid-area: lifterAttempt;
+  
+}
+
+.lifterName {
+  font-size: 100px;
+  letter-spacing: normal;
+  grid-area: lifterName;
+
+}
+
+.lifterInfo {
+  font-size: 50px;
+  letter-spacing: normal;
+  grid-area: lifterInfo;
+
+}
+
+.attemptWeight {
+  font-size: 200px;
+  letter-spacing: normal;
+  grid-area: attemptWeight;
+  margin-top: 100px;
+}
+
+
+.barLoadContainer{
+  grid-area: barLoad;
+  display: grid;
+  grid-template-areas:
+    "barLoad rackInfo";
+  grid-template-columns: auto auto;
+}
+
+.barLoad {
+  --color-dark: #232323;
+  --color-light: #ffffff;
+  --plate-font-size: 23px;
+  --plate-margin-right: 5px;
+  --plate-width: 30px;
+  --maximum-plate-height: 80%;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  height: 400px;
+  min-width: 200px;
+  color: var(--color-light);
+  font-size: var(--plate-font-size);
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+
+.rackInfo {
+  color: var(--color-dark);
+  position: absolute;
+  right: 0;
+  font-size: 50px;
+  text-align: right;
+  border: none;
+  background-color: inherit;
+  padding-right: 75px;
+}
+
+div.bar {
+  width: var(--plate-width);
+  height: 10%;
+  background-color:gray;
+}
+
+/* Defaults for the plates */
+div.kg50, div.kg25, div.kg20, div.kg15, div.kg10, div.kg5, div.kg2p5, div.kg1p25, div.kg1, div.kg0p75, div.kg0p5, div.kg0p25,
+div.lbs100, div.lbs55, div.lbs45, div.lbs35, div.lbs25, div.lbs10, div.lbs5, div.lbs2p5, div.lbs1p25, div.lbs0p5,
+div.collar, div.error {
+  display: flex;
+  flex-direction: column; /* Handles the case of multiple internal textual <div>s */
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  margin-right: var(--plate-margin-right);
+  border-style: solid;
+  border-color: white;
+  padding: 5px;
+  font-size: 50px;
+  min-width: 50px;
+}
+
+/* Specific styles for each plate type */
+
+/* 50kg plate */
+div.kg50 {
+  height: var(--maximum-plate-height);
+  width: calc(var(--plate-width) * 1.5);
+}
+
+/* 25kg plate */
+div.kg25 {
+  height: var(--maximum-plate-height);
+  background-color: red;
+}
+
+/* 20kg plate */
+div.kg20 {
+  height: var(--maximum-plate-height);
+  background-color: blue;
+}
+
+/* 15kg plate */
+div.kg15 {
+  height: calc(var(--maximum-plate-height) * 0.9);
+  background-color: yellow;
+  color: black;
+}
+
+/* 10kg plate */
+div.kg10 {
+  height: calc(var(--maximum-plate-height) * 0.8);
+  background-color: green;
+}
+
+/* 5kg plate */
+div.kg5 {
+  height: calc(var(--maximum-plate-height) * 0.7);
+  background-color: white;
+  color:black
+}
+
+/* 2.5kg plate */
+div.kg2p5 {
+  height: calc(var(--maximum-plate-height) * 0.6);
+  background-color: black;
+}
+
+/* 1.25kg plate */
+div.kg1p25 {
+  height: calc(var(--maximum-plate-height) * 0.5);
+  background-color: gray;
+}
+
+/* 0.5kg plate */
+div.kg0p5 {
+  height: calc(var(--maximum-plate-height) * 0.45);
+  background-color: white;
+  color:black
+}
+
+/* 0.25kg plate */
+div.kg0p25 {
+  height: calc(var(--maximum-plate-height) * 0.4);
+  background-color: gray;
+}
+
+/* Collar styling */
+div.collar {
+  margin-right: 0;
+  height: 14%;
+  background-color: gray;
+  width: 50px;
+}

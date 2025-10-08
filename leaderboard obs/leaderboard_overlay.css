@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Bombardier";
+  src:
+    local("Bombardier"),
+    url("../Bombardier.otf") format("opentype");
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.container {
+  position: relative;
+  width:fit-content;
+  visibility: visible;
+  opacity: 1;
+  overflow: hidden;
+  font-family: "Bombardier", sans-serif;
+  box-sizing: border-box;
+  margin: auto;
+}
+table {
+  color: white;
+  text-align: center;
+  empty-cells: show;
+  padding: 4px;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  margin-top: 40px;
+
+}
+th {
+  text-transform: uppercase;
+  padding: 12px;
+  font-family: "Bombardier", sans-serif;
+  font-size: 20px;
+  background-color: black;
+}
+
+.leaderboardDescription {
+  color: white;
+  text-align: left;
+  text-transform:uppercase;
+  font-size: 30px;
+  font-family: "Bombardier", sans-serif;
+  padding: 9px;
+}
+td {
+  padding: 4px;
+  white-space: nowrap;
+  padding-left: 15px;
+}
+
+.Lifter {
+  word-wrap: break-word;
+  width: 50rem;
+}
+
+tr {
+  background-color: black;
+  height: 40px;
+  font-size: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.descriptionContainer{
+  width:fit-content;
+  display: flex;
+  align-items: stretch;
+  padding: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  border: 4px solid white;
+  border-collapse: collapse;
+}
+
+
+tr:first-child td:first-child {
+  border-top-left-radius: 12px;
+}
+tr:first-child td:last-child {
+  border-top-right-radius: 12px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}

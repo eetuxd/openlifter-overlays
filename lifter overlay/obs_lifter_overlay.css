@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Bombardier";
+  src:
+    local("Bombardier"),
+    url("../Bombardier.otf") format("opentype");
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.container {
+  background: black;
+  display: flex;
+  align-items: stretch;
+  visibility: visible;
+  opacity: 1;
+  margin: 3px;
+  overflow: hidden;
+  font-family: "Bombardier", sans-serif;
+  /*border-style: solid;
+  border-color: white;*/
+}
+
+
+table {
+  background: black !important;
+  color: white;
+  text-align: center;
+  empty-cells: show;
+  padding: 4px;
+}
+
+table.paddingless {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+img {
+  height: 50px;
+  background: black !important;
+  empty-cells: show;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+}
+
+.lifterName {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: normal;
+  height: 50px;
+  width: auto;
+  padding-top: 4px;
+  text-align: left;
+}
+.lifterClass {
+  word-wrap: break-word;
+  font-size: 25px;
+  height: 25px;
+  width: auto;
+  padding-top: 22px;
+}
+
+.lifterWeightClass {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: normal;
+  height: 50px;
+  width: auto;
+  padding-top: 4px;
+  text-align: left;
+}
+
+.lifterDivisions {
+  word-wrap: break-word;
+  font-size: 25px;
+  height: 25px;
+  width: auto;
+  padding-top: 22px;
+  color: white;
+}
+
+.lifterTeam {
+  word-wrap: break-word;
+  font-size: 25px;
+  height: 25px;
+  width: auto;
+  padding-top: 22px;
+  color: white;
+}
+.lifterPlacement {
+  font-size: 70px;
+  color: black;
+}
+
+.lifterEvent {
+  font-size: 25px;
+  width: 80px;
+  text-transform: uppercase;
+}
+.lifterAttemptWeightContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.lifterAttemptWeight {
+  width: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  padding: 6px;
+  padding-top: 10px;
+  font-size: 50px;
+}
+
+.lifterMaxWeightContainer {
+  padding-bottom: 10px;
+}
+
+.lifterMaxWeight {
+  width: 120px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  display: flex;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+.lifterResultsContainer {
+  width: 150px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  font-size: small;
+  white-space: nowrap;
+  display: flex;
+  padding-left: 10px;
+}
+.placementContainer {
+  margin-bottom: 20px;
+}
+.totalContainer {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.lifterResultHeader {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  font-size: 25px;
+  align-items: center;  
+}
+.lifterResultTotal {
+  flex: 1;
+  background-color: white;
+  color: black;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 50px;
+  align-items: center;
+}
+.emptyCell {
+  width: 300px;
+}
+tbody {
+  display: block;
+}
+.currentLift {
+  background-color: rgb(77, 77, 77);
+}
+.goodLift {
+  background-color: green;
+}
+.badLift {
+  background-color: red;
+}

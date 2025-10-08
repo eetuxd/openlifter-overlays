@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifter details</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="./obs_lifter_overlay.css" />
+    <script type="text/javascript" src="./obs_lifter_overlay.js"></script>
+  </head>
+  <body>
+    <div class= "row">
+      <div class="container">
+        <table>
+          <tbody>
+            <tr>
+              <img src="../hkaanto.png" class="logo"/> 
+              <td class="lifterName" rowspan="1" colspan="4" id="lifterName"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container">
+        <table>
+          <tbody>
+            <tr>
+              <td class="lifterDivisions" rowspan="1" colspan="1" id="lifterDivisions"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <table class= "paddingless">
+          <tbody>
+            <tr>
+              <td class="lifterAttemptWeightContainer" colspan="2">
+                <div class="lifterAttemptWeight" id="lifterAttempt1"></div>
+              </td>
+              <td class="lifterAttemptWeightContainer" colspan="2">
+                <div class="lifterAttemptWeight" id="lifterAttempt2"></div>
+              </td>
+              <td class="lifterAttemptWeightContainer" colspan="2">
+                <div class="lifterAttemptWeight" id="lifterAttempt3"></div>
+              </td>
+              <td class="emptyCell"></td>
+              <td class="lifterMaxWeightContainer" >
+                <div class="lifterMaxWeight" id="lifterMaxWeightSquat"></div>
+                <div class="lifterMaxWeight" id="lifterMaxWeightBench"></div>
+                <div class="lifterMaxWeight" id="lifterMaxWeightDeadlift"></div>
+              </td>
+              <td>
+                  <div class="lifterResultHeader">GL-Pisteet</div>
+                  <div class="lifterResultTotal" id="lifterResultTotal"></div> 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
